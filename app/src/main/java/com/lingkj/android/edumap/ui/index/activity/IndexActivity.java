@@ -92,6 +92,10 @@ public class IndexActivity extends BaseActivity {
 
     }
 
+    @Override
+    protected boolean showBack() {
+        return  false;
+    }
 
     @Override
     protected void errorReLoad() {

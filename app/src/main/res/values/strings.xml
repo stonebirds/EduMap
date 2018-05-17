@@ -63,4 +63,34 @@
     <string name="text_my_setting">设置</string>
     <string name="text_help_feedback">帮助与反馈</string>
 
+
+    <!--首页-->
+    <string name="index_query_hint">学前教育</string>
+    <string name="all">全部</string>
+
+    <string-array name="index_text_big_sort">
+
+    <item name="index_text_big_sort_item1">升学辅导</item>
+    <item name="index_text_big_sort_item2">语言</item>
+    <item name="index_text_big_sort_item3">兴趣爱好</item>
+    <item name="index_text_big_sort_item4">学校</item>
+    <item name="index_text_big_sort_item5">职业技术</item>
+    </string-array>
+
+    <string-array name="index_text_small_sort">
+
+    <item name="index_text_small_sort_item1">英语</item>
+    <item name="index_text_small_sort_item2">小学辅导</item>
+    <item name="index_text_small_sort_item3">钢琴</item>
+    <item name="index_text_small_sort_item4">书法</item>
+    <item name="index_text_small_sort_item5">考研</item>
+    <item name="index_text_small_sort_item1">初中辅导</item>
+    <item name="index_text_small_sort_item2">芭蕾舞</item>
+    <item name="index_text_small_sort_item3">跆拳道</item>
+    <item name="index_text_small_sort_item4">少儿围棋</item>
+    <item name="index_text_small_sort_item5">全部</item>
+
+    </string-array>
+
+
 </resources>

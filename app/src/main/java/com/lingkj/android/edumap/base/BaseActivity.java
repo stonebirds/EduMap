@@ -3,6 +3,7 @@ package com.lingkj.android.edumap.base;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.AppBarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -45,14 +46,23 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     @BindView(R.id.baseToolbar)
     Toolbar toolbar;
+    @BindView(R.id.basae_title)
+    AppBarLayout mBaseTitle;
     @BindView(R.id.activityTitle)
     TextView tvTitle;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView();
         initRealContent();
         binder = ButterKnife.bind(this);
+
+        if (showBack()) {
+            mBaseTitle.setVisibility(View.VISIBLE);
+        } else {
+            mBaseTitle.setVisibility(View.GONE);
+        }
         this.initView();
     }
 
@@ -171,10 +181,12 @@ public abstract class BaseActivity extends AppCompatActivity {
 
 
     protected abstract void errorReLoad();
-    protected  boolean showBack(){
 
+    protected boolean showBack() {
         return false;
-    };
+    }
+
+    ;
 
     public Toolbar getToolbar() {
         return toolbar;

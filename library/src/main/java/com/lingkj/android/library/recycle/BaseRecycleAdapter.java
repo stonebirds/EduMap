@@ -18,6 +18,8 @@ public class BaseRecycleAdapter<D, V extends BaseViewHolder<D>> extends Recycler
     protected List<D> mDatas;
     private IViewHolderFactory<V> mFactory;
     private int mLayoutId;
+    private int mLayoutId1;
+    private int mType = 0;
     protected BaseViewHolder.OnItemClickListener mOnItemClickedListener;
 
     protected BaseRecycleAdapter() {
@@ -27,6 +29,7 @@ public class BaseRecycleAdapter<D, V extends BaseViewHolder<D>> extends Recycler
         this.mDatas = datas;
         this.mLayoutId = layoutId;
     }
+
 
     public BaseRecycleAdapter(int layoutId) {
         this.mLayoutId = layoutId;
@@ -92,6 +95,10 @@ public class BaseRecycleAdapter<D, V extends BaseViewHolder<D>> extends Recycler
         } else {
             throw new Exception("data can't be set twice");
         }
+    }
+
+    public int getType() {
+        return mType;
     }
 
 }

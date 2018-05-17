@@ -7,6 +7,16 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:textColorPrimary">#323232</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m">@color/black</item>
+
+    </style>
+    <style name="index_AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/translate</item>
+        <item name="colorPrimaryDark">@color/translate</item>
+        <item name="colorAccent">@color/translate</item>
+        <item name="android:textColorPrimary">#323232</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">@color/white</item>
+
     </style>
 
     <style name="ActiveTabLayoutTextSizeStyle">
